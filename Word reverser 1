@@ -1,0 +1,18 @@
+def name():
+  name = raw_input("Enter 4 letter words here")
+  smallname = name.lower()
+  if len(name) == 4 and name.isalpha() == True:
+    print smallname
+    first_letter = smallname[0]
+    second_letter = smallname[1]
+    third_letter = smallname[2]
+    fourth_letter = smallname[3]
+    translate = raw_input("Would you like to flip the word? Type yes or no")
+    if translate == "yes": 
+      print "Translating.."
+      print "Translating.."
+      print "Translating.."
+      print fourth_letter + third_letter + second_letter + first_letter
+  else:
+    print "Not valid"
+name()
